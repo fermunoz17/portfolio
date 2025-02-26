@@ -9,7 +9,6 @@
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
     "framer-motion": "^12.4.7",
-    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",
@@ -19,7 +18,7 @@
     "react-vertical-timeline-component": "^3.5.3",
     "web-vitals": "^4.2.4"
   },
-  "homepage": "https://fermunoz17.github.io",
+  "homepage": "https://fermunoz17.github.io/react-gh-pages",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -45,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
