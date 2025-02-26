@@ -1,0 +1,149 @@
+/* About.css - Adjusting the container to push content down */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    /* Ensures a side-by-side column layout */
+    align-items: flex-start;
+    /* Aligns items to the start of the flex container */
+    justify-content: center;
+    /* Centers the content horizontally */
+    min-height: 100vh;
+    /* Full height of the viewport */
+    padding-top: 10vh;
+    /* Adjust this value to push the content lower */
+    color: #ffffff;
+    /* Text color for visibility against a dark background */
+}
+
+.left-column,
+.right-column {
+    width: 50%;
+    /* Each column takes half of the container width */
+    padding: 0 50px;
+    /* Padding on both sides for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        /* Stack the columns vertically on small screens */
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        /* Full width for small screens */
+        padding: 20px;
+        /* Adjust padding to smaller value for better spacing */
+        text-align: center;
+        /* Center the text for better readability */
+    }
+}
+
+.profile-photo {
+    width: 200px;
+    /* Size of the profile photo */
+    height: 200px;
+    /* Maintains aspect ratio */
+    border-radius: 50%;
+    /* Makes the image round */
+    margin-bottom: 40px;
+    /* Space below the photo */
+}
+
+.tech-icons,
+.school-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    /* Space between icons */
+}
+
+.tech-icons img,
+.school-icons img {
+    width: 100px;
+    /* Adjust the size of tech icons */
+    height: 100px;
+    /* Keep the aspect ratio square */
+}
+
+
+
+.flip-card {
+    width: 200px;
+    /* Size of the card */
+    height: 200px;
+    /* Ensures the card has a uniform size */
+    perspective: 1000px;
+    /* Depth effect for the flip */
+    margin: 10px;
+    /* Spacing around the card */
+    overflow: hidden;
+    /* Hides parts outside the boundary */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    /* Smooth flip transition */
+    transform-style: preserve-3d;
+    /* Enables 3D space for flipping */
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    /* Rotate the card 180 degrees on hover */
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Hides the back face on flip */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flip-card-front {
+    background-color: #fafafa;
+    /* Light background for the front */
+}
+
+.flip-card-back {
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    /* Lighter background for the back for readability */
+    color: #333;
+    /* Dark text for contrast */
+    transform: rotateY(180deg);
+    /* Aligns the back face correctly when flipped */
+}
+
+.flip-card-front img,
+.flip-card-back img {
+    width: auto;
+    /* Adjusts image width to maintain aspect ratio */
+    max-width: 80%;
+    /* Limits image width to 80% of card */
+    height: auto;
+    /* Maintains image aspect ratio */
+}
+
+.flip-card-back h2,
+.flip-card-back p {
+    margin: 5px;
+    overflow-y: auto;
+    /* Spacing for text inside the card */
+}

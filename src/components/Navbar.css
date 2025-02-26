@@ -1,0 +1,88 @@
+.navbar {
+    background-color: transparent;
+    /* Light background for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    /* Padding around the navbar */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    /* Bold the brand name */
+    color: #007bff;
+    /* Bootstrap primary color */
+    transition: transform 0.3s ease;
+    /* Smooth transformation on hover */
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the brand on hover */
+}
+
+.nav-link {
+    color: #ffffff !important;
+    /* Dark gray color for the links */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: #007bff;
+    /* Highlight color on hover */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.nav-item {
+    margin: 0 10px;
+    /* Spacing between navbar items */
+}
+
+/* Underline effect for nav links */
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #007bff;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    /* Full width on hover */
+}
+
+/* Responsive navbar toggle */
+.navbar-toggler {
+    border-color: #007bff;
+    /* Color of the toggle border */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 123, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    /* Custom toggle icon */
+}
+
+.navbar.scrolled {
+    background-color: #ffffff;
+    /* White background */
+    transition: background-color 0.3s ease;
+    /* Smooth transition to white */
+    color: #333;
+    /* Change text color for visibility */
+}
+
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-brand {
+    color: #333 !important;
+    /* Dark text color when scrolled */
+}
+
+.navbar.scrolled .nav-link:hover {
+    color: #007bff !important;
+    /* Keep the hover effect */
+}
