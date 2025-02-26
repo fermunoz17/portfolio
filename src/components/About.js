@@ -43,7 +43,6 @@ function About() {
         { src: "images/git.png", alt: "GIT" }
     ];
 
-
     return (
         <div id="about" className="about-container">
             <div className="left-column">
