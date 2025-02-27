@@ -22,7 +22,7 @@ function Achievements() {
     };
 
     const cards = [
-        { imgSrc: "/images/Hackathon.png", title: "2024 Smart Cities AI Hackathon", text: "1st place at the 2024 Smart Cities AI Hackathon with Daniel Fuentes, Andre Salamanca, and Diego Aviles", link: "https://www.linkedin.com/posts/salamanca056_honored-to-share-that-our-team-was-awarded-activity-7178905614251687937-qGyS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrezWgBaSpqp9yyVIOhpqGtI4HFQzp2tNQ" },
+        { imgSrc: "\public\images\Hackathon.png", title: "2024 Smart Cities AI Hackathon", text: "1st place at the 2024 Smart Cities AI Hackathon with Daniel Fuentes, Andre Salamanca, and Diego Aviles", link: "https://www.linkedin.com/posts/salamanca056_honored-to-share-that-our-team-was-awarded-activity-7178905614251687937-qGyS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrezWgBaSpqp9yyVIOhpqGtI4HFQzp2tNQ" },
         { imgSrc: "/images/SSTEM.png", title: "S-STEM Scholarship Recipient", text: "Recipient of the NSF S-STEM Scholarship.", link: "https://www.linkedin.com/posts/utep-cs_on-november-22-2024-the-utep-computer-activity-7287514349814927360-SaCA?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrezWgBaSpqp9yyVIOhpqGtI4HFQzp2tNQ" },
         { imgSrc: "/images/GMiS-Scholar.png", title: "2023 GMiS Scholar", text: "Recipeient of the 2023 GMiS Scholarship.", link: "/images/GMiS-Scholar.png" },
         { imgSrc: "/images/IEEE_Award.png", title: "3rd place IEEE Green Technologies Student Poster Competition", text: "3rd place winner for the 2023 IEEE Green Technologies, undergraduate Student Poster Competition.", link: "images/IEEE_Award.png" },
