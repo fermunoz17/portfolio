@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://fermunoz17.github.io/",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -19,6 +18,7 @@
     "react-vertical-timeline-component": "^3.5.3",
     "web-vitals": "^4.2.4"
   },
+  "homepage": "https://fermunoz17.github.io/portfolio/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

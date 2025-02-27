@@ -21,7 +21,7 @@ function Navbar() {
         };
     }, [scrolled]);
 
-    const logoSrc = scrolled ? "/images/logo.png" : "/images/white-logo.png"
+    const logoSrc = scrolled ? `${process.env.PUBLIC_URL}/images/logo.png` : `${process.env.PUBLIC_URL}/images/white-logo.png`;
 
     return (
         <BootstrapNavbar expand="lg" sticky="top" className={scrolled ? 'navbar scrolled' : 'navbar'}>

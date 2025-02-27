@@ -32,22 +32,22 @@ function About() {
     };
 
     const techIcons = [
-        { src: "images/react.png", alt: "React" },
-        { src: "images/angular.png", alt: "Angular" },
-        { src: "images/nodejs.png", alt: "Node.js" },
-        { src: "images/java.png", alt: "Java" },
-        { src: "images/js.png", alt: "JavaScript" },
-        { src: "images/typescript.png", alt: "TS" },
-        { src: "images/html.png", alt: "HTML" },
-        { src: "images/css.png", alt: "CSS" },
-        { src: "images/git.png", alt: "GIT" }
+        { src: `${process.env.PUBLIC_URL}/images/react.png`, alt: "React" },
+        { src: `${process.env.PUBLIC_URL}/images/angular.png`, alt: "Angular" },
+        { src: `${process.env.PUBLIC_URL}/images/nodejs.png`, alt: "Node.js" },
+        { src: `${process.env.PUBLIC_URL}/images/java.png`, alt: "Java" },
+        { src: `${process.env.PUBLIC_URL}/images/js.png`, alt: "JavaScript" },
+        { src: `${process.env.PUBLIC_URL}/images/typescript.png`, alt: "TS" },
+        { src: `${process.env.PUBLIC_URL}/images/html.png`, alt: "HTML" },
+        { src: `${process.env.PUBLIC_URL}/images/css.png`, alt: "CSS" },
+        { src: `${process.env.PUBLIC_URL}/images/git.png`, alt: "GIT" }
     ];
+
 
     return (
         <div id="about" className="about-container">
             <div className="left-column">
-                <img src="images/landing_3.png" alt="Your Name" className="profile-photo" />
-
+                <img src={`${process.env.PUBLIC_URL}/images/landing_3.png`} alt="Your Name" className="profile-photo" />
                 <div className="social-links">
                     <Button variant="outline-primary" href="https://github.com/fermunoz17" target="_blank" className="m-2">
                         GitHub
@@ -103,7 +103,7 @@ function About() {
                             >
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <img src="/images/epcc.png" alt="El Paso Community College" />
+                                        <img src={`${process.env.PUBLIC_URL}/images/epcc.png`} alt="El Paso Community College" />
                                     </div>
                                     <div className="flip-card-back">
                                         <h4>El Paso Community College</h4>
@@ -124,7 +124,7 @@ function About() {
                             >
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <img src="/images/utep.png" alt="University of Texas - El Paso" />
+                                        <img src={`${process.env.PUBLIC_URL}/images/utep.png`} alt="University of Texas - El Paso" />
                                     </div>
                                     <div className="flip-card-back">
                                         <h4>The University of Texas at El Paso</h4>
