@@ -18,6 +18,15 @@ function Projects() {
 
     const projects = [
         {
+            title: "Tefiti Island Resort",
+            subtitle: "React | Firebase | GitHub",
+            text: "Built as part of an Agile Methodologies course, this project simulates a modern island resort website with dynamic UI elements and real-time features. Developed using React and Firebase, the application reflects agile team collaboration and continuous iteration, showcasing skills in responsive design, user experience, and full-stack integration.",
+            link: "https://team-2-df125.web.app/",
+            linkTitle: "Application Link",
+            collaborators: "Collaborators: Ivan Acedo, Angel Aguayo, Jeremiah Dean, Chelsea Moreno, Aminah Soueidan",
+            imgSrc: "/images/tefiti.png"
+        },
+        {
             title: "Forum app",
             subtitle: "React | Firebase | GitHub",
             text: "This project is a forum application that enables users to create accounts, make posts, edit content, and like posts. It incorporates real-time notifications to keep users informed of interactions within the community. The application is designed to facilitate robust user engagement and content management, enhancing the overall user experience by providing a dynamic and interactive platform for discussions. The project's source code is available on GitHub for further development and contribution.",
