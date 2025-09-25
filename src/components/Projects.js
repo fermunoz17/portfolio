@@ -18,6 +18,15 @@ function Projects() {
 
     const projects = [
         {
+            title: "News Article Deviation Analysis",
+            subtitle: "Python | scikit-learn | GitHub",
+            text: "This project measures how much individual news articles deviate from a consensus 'ground truth' across multiple sources. Using NewsAPI for article aggregation and newspaper3k for text extraction, each article was transformed into semantic vector embeddings via the all-MiniLM-L6-v2 model. Named entity recognition was used to identify common facts across articles, which formed the baseline for comparison. Cosine similarity was applied to determine deviation scores, highlighting outlier articles that may present bias or misinformation. The project emphasizes NLP, semantic analysis, and information reliability in media coverage.",
+            link: "https://github.com/rvallesmar/hard_truth",
+            linkTitle: "GitHub",
+            collaborators: "Collaborators: Braulio Bracamontes, Rogelio Valles-Martinez",
+            imgSrc: "/images/news.png"
+        },
+        {
             title: "Tefiti Island Resort",
             subtitle: "React | Firebase | GitHub",
             text: "Built as part of an Agile Methodologies course, this project simulates a modern island resort website with dynamic UI elements and real-time features. Developed using React and Firebase, the application reflects agile team collaboration and continuous iteration, showcasing skills in responsive design, user experience, and full-stack integration.",
