@@ -37,7 +37,7 @@ function About() {
         { src: `${process.env.PUBLIC_URL}/images/nodejs.png`, alt: "Node.js" },
         { src: `${process.env.PUBLIC_URL}/images/java.png`, alt: "Java" },
         { src: `${process.env.PUBLIC_URL}/images/js.png`, alt: "JavaScript" },
-        { src: `${process.env.PUBLIC_URL}/images/typescript.png`, alt: "TS" },
+        { src: `${process.env.PUBLIC_URL}/images/ts.png`, alt: "TS" },
         { src: `${process.env.PUBLIC_URL}/images/html.png`, alt: "HTML" },
         { src: `${process.env.PUBLIC_URL}/images/css.png`, alt: "CSS" },
         { src: `${process.env.PUBLIC_URL}/images/git.png`, alt: "GIT" }
@@ -60,16 +60,16 @@ function About() {
                 <p>Email: fermunozley@gmail.com</p>
                 <br></br>
                 <p>
-                    My technical background spans various programming languages ​​including Java, TypeScript, and C with experience with Node.js and Angular.js.
-                    These skills have been further developed through hands-on experiences, specifically as a computer science peer leader at EPCC and as a software
-                    engineer intern at Steele Consulting Inc. These activities have not only sharpened my technical skills but have instilled in me the
-                    importance of teamwork, adaptability, and continuous learning.
+                    I hold a B.S. in Computer Science with a concentration in Software Engineering from the University of Texas at El Paso (May 2025) and am currently pursuing an M.S. in Software Engineering at UTEP. My technical foundation spans Java, TypeScript, and C, along with experience in frameworks and tools such as Node.js, Angular.js, and Docker.
+                </p>
+                <p>
+                    My hands-on experience includes roles as a computer science peer leader at EPCC, a full-stack software engineering intern at Steele Consulting Inc., and most recently, a software engineer intern at American Express. At AMEX, I enhanced an internal testing tool using ReactJS and Spring Boot, and deployed it as a Docker component, boosting accessibility and team productivity in an Agile environment.
+                </p>
+                <p>
+                    These experiences have not only strengthened my software development skills but also deepened my interest in designing innovative and reliable systems. As I continue my graduate studies, I’m focused on creating impactful software solutions with an eye toward AI integration and scalable architectures that solve real-world problems.
+
                 </p>
                 <br></br>
-                <p>
-                    Looking ahead, I’m eager to continue my journey in technology by pursuing a Master's degree in Artificial Intelligence at UTEP,
-                    aiming to further specialize in creating innovative AI-driven solutions.
-                </p>
             </div>
             <div className="right-column">
                 <h3>Tech Stack</h3>
