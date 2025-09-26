@@ -26,7 +26,7 @@ function Achievements() {
         { imgSrc: "/images/SSTEM.png", title: "S-STEM Scholarship Recipient", text: "Recipient of the NSF S-STEM Scholarship.", link: "https://www.linkedin.com/posts/utep-cs_on-november-22-2024-the-utep-computer-activity-7287514349814927360-SaCA?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrezWgBaSpqp9yyVIOhpqGtI4HFQzp2tNQ" },
         { imgSrc: "/images/GMiS-Scholar.png", title: "2023 GMiS Scholar", text: "Recipeient of the 2023 GMiS Scholarship.", link: "/images/GMiS-Scholar.png" },
         { imgSrc: "/images/IEEE_Award.png", title: "3rd place IEEE Green Technologies Student Poster Competition", text: "3rd place winner for the 2023 IEEE Green Technologies, undergraduate Student Poster Competition.", link: "images/IEEE_Award.png" },
-        { imgSrc: "/images/GMIS_2022.png", title: "2nd Place Undergraduate Student Poster Competition", text: "2nd place winner for the 2022 Research Posters Competition in undergraduate computing category.", link: "/images/GMIS_2022.png" },
+        { imgSrc: "/images/GMIS_2022.png", title: "2nd Place Undergraduate Student Poster Competition", text: "2nd place winner for the 2022 Research Posters Competition in undergraduate computing category.", link: "/pdfs/XAI_Poster.pdf" },
     ];
 
     return (

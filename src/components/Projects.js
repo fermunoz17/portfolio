@@ -24,7 +24,7 @@ function Projects() {
             link: "https://github.com/rvallesmar/hard_truth",
             linkTitle: "GitHub",
             collaborators: "Collaborators: Braulio Bracamontes, Rogelio Valles-Martinez",
-            imgSrc: "/images/news.png"
+            imgSrc: "/images/newsd.png"
         },
         {
             title: "Tefiti Island Resort",
