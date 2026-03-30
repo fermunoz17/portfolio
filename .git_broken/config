@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "main"]
+	url = https://github.com/fermunoz17/portfolio.git
+	fetch = +refs/heads/*:refs/remotes/main/*
+[branch "main"]
+	remote = main
+	merge = refs/heads/part
+[branch "main"]
+	vscode-merge-base = main/part

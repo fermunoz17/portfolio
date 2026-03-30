@@ -1,0 +1,42 @@
+/* Achievements.css */
+
+/* Styling the container to center cards and add padding */
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* Styling for each card column */
+.achievement-col {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* Space between rows */
+}
+
+/* Card styling for consistent sizing and spacing */
+.card {
+    margin: 10px;
+    /* Space around each card */
+    width: 25rem;
+    /* Standard width */
+    height: 25rem;
+    /* Standard height */
+}
+
+.card-img-top {
+    height: 50%;
+    /* Limits the image height to keep it consistent */
+    object-fit: cover;
+    /* Ensures the image covers the area nicely */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Spreads out the text and button */
+}
