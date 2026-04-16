@@ -117,7 +117,7 @@ function Projects() {
                         <h6 className="card-subtitle mb-2 text-muted">{project.subtitle}</h6>
                         <h6 className="card-subtitle mb-2 text-muted">{project.collaborators}</h6>
                         <p className="card-text">{project.text}</p>
-                        <a href={project.link} target='_blank' className="card-link">{project.linkTitle}</a>
+                        <a href={project.link} target='_blank' rel="noreferrer" className="card-link">{project.linkTitle}</a>
                     </div>
                 </motion.div>
             ))}
