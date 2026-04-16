@@ -10,6 +10,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Achievements from './components/Achievements';
 import Projects from './components/Projects'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
 
       </Routes>
+      <Footer />
     </Router>
 
   );
