@@ -27,7 +27,7 @@ function Navbar() {
         <BootstrapNavbar expand="lg" sticky="top" className={scrolled ? 'navbar scrolled' : 'navbar'}>
             <Container>
                 <BootstrapNavbar.Brand as={Link} to="/">
-                    <img src={logoSrc} width="50" height="50" alt="Logo" />
+                    <img src={logoSrc} width="70" height="70" alt="Logo" />
                 </BootstrapNavbar.Brand>
                 <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
                 <BootstrapNavbar.Collapse id="basic-navbar-nav">

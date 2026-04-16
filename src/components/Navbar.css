@@ -10,41 +10,44 @@
 
 .navbar-brand {
     font-weight: bold;
-    /* Bold the brand name */
     color: #007bff;
-    /* Bootstrap primary color */
     transition: transform 0.3s ease;
-    /* Smooth transformation on hover */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    pointer-events: none;
 }
 
 .navbar-brand:hover {
     transform: scale(1.1);
-    /* Slightly enlarge the brand on hover */
 }
 
 .nav-link {
     color: #ffffff !important;
-    /* Dark gray color for the links */
     transition: color 0.3s ease;
-    /* Smooth color transition */
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
 }
 
 .nav-link:hover {
     color: #007bff;
-    /* Highlight color on hover */
     text-decoration: none;
-    /* Remove underline */
 }
 
 .nav-item {
     margin: 0 10px;
-    /* Spacing between navbar items */
 }
 
 /* Underline effect for nav links */
 .nav-link::after {
     content: '';
-    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 0;
     height: 2px;
     background: #007bff;
@@ -53,7 +56,6 @@
 
 .nav-link:hover::after {
     width: 100%;
-    /* Full width on hover */
 }
 
 /* Responsive navbar toggle */
