@@ -55,6 +55,10 @@
     /* Space below the photo */
 }
 
+.tech-icons {
+    margin-bottom: 48px;
+}
+
 .tech-icons,
 .school-icons {
     display: flex;
@@ -67,9 +71,39 @@
 .tech-icons img,
 .school-icons img {
     width: 100px;
-    /* Adjust the size of tech icons */
     height: 100px;
-    /* Keep the aspect ratio square */
+}
+
+.tech-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: default;
+}
+
+.tech-icon-wrapper:hover .tech-icon-bounce {
+    animation-play-state: paused;
+}
+
+.tech-icon-label {
+    font-size: 0.72rem;
+    color: rgba(200, 220, 255, 0);
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+}
+
+.tech-icon-wrapper:hover .tech-icon-label {
+    color: rgba(200, 220, 255, 0.85);
+}
+
+@keyframes bounce-wave {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-10px); }
+}
+
+.tech-icon-bounce {
+    animation: bounce-wave 2s ease-in-out infinite;
 }
 
 
@@ -117,18 +151,18 @@
 }
 
 .flip-card-front {
-    background-color: #fafafa;
-    /* Light background for the front */
+    background-color: #0d2744;
+    border: 1px solid rgba(100, 181, 246, 0.15);
+    border-radius: 12px;
 }
 
 .flip-card-back {
     overflow-y: auto;
-    background-color: #f0f0f0;
-    /* Lighter background for the back for readability */
-    color: #333;
-    /* Dark text for contrast */
+    background-color: #112f52;
+    border: 1px solid rgba(100, 181, 246, 0.2);
+    border-radius: 12px;
+    color: #e8eaf0;
     transform: rotateY(180deg);
-    /* Aligns the back face correctly when flipped */
 }
 
 .flip-card-front img,

@@ -24,7 +24,7 @@ function Projects() {
             link: "https://github.com/rvallesmar/hard_truth",
             linkTitle: "GitHub",
             collaborators: "Collaborators: Braulio Bracamontes, Rogelio Valles-Martinez",
-            imgSrc: "/images/newsd.png"
+            imgSrc: "/images/news.png"
         },
         {
             title: "Tefiti Island Resort",
@@ -84,17 +84,15 @@ function Projects() {
 
 
     const cardVariants = {
-        hidden: { opacity: 0, y: 20 },
+        hidden: { opacity: 0, y: 40 },
         visible: (custom) => ({
             opacity: 1,
             y: 0,
             transition: {
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
-                mass: 1,
-                delay: custom * 0.3,
-                duration: 1.0
+                type: "tween",
+                ease: [0.25, 0.1, 0.25, 1],
+                delay: custom * 0.1,
+                duration: 0.6
             }
         })
     };
@@ -117,7 +115,19 @@ function Projects() {
                         <h6 className="card-subtitle mb-2 text-muted">{project.subtitle}</h6>
                         <h6 className="card-subtitle mb-2 text-muted">{project.collaborators}</h6>
                         <p className="card-text">{project.text}</p>
-                        <a href={project.link} target='_blank' rel="noreferrer" className="card-link">{project.linkTitle}</a>
+                        <div className="project-btn-wrapper">
+                            <motion.a
+                                href={project.link}
+                                target='_blank'
+                                rel="noreferrer"
+                                className="project-btn"
+                                whileHover={{ scale: 1.06, y: -2 }}
+                                whileTap={{ scale: 0.97 }}
+                                transition={{ type: "tween", ease: [0.25, 0.1, 0.25, 1], duration: 0.2 }}
+                            >
+                                {project.linkTitle} →
+                            </motion.a>
+                        </div>
                     </div>
                 </motion.div>
             ))}

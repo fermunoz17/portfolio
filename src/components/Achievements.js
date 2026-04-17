@@ -1,22 +1,20 @@
 import React from 'react';
 import './Achievements.css';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
 
 function Achievements() {
     const cardVariants = {
-        hidden: { opacity: 0, y: 20 },
+        hidden: { opacity: 0, y: 40 },
         visible: (custom) => ({
             opacity: 1,
             y: 0,
             transition: {
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
-                mass: 1,
+                type: "tween",
+                ease: [0.25, 0.1, 0.25, 1],
                 delay: custom * 0.1,
-                duration: 1.0
+                duration: 0.6
             }
         })
     };
@@ -46,9 +44,19 @@ function Achievements() {
                                 <Card.Body>
                                     <Card.Title>{card.title}</Card.Title>
                                     <Card.Text>{card.text}</Card.Text>
-                                    <Button variant="primary" onClick={() => window.open(card.link, '_blank')}>
-                                        View
-                                    </Button>
+                                    <div className="project-btn-wrapper">
+                                        <motion.a
+                                            href={card.link}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="project-btn"
+                                            whileHover={{ scale: 1.06, y: -2 }}
+                                            whileTap={{ scale: 0.97 }}
+                                            transition={{ type: "tween", ease: [0.25, 0.1, 0.25, 1], duration: 0.2 }}
+                                        >
+                                            View →
+                                        </motion.a>
+                                    </div>
                                 </Card.Body>
                             </Card>
                         </motion.div>

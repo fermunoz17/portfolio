@@ -34,7 +34,7 @@
 }
 
 .nav-link:hover {
-    color: #007bff;
+    color: #64b5f6;
     text-decoration: none;
 }
 
@@ -50,7 +50,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: #007bff;
+    background: #64b5f6;
     transition: width 0.3s;
 }
 
@@ -70,21 +70,18 @@
 }
 
 .navbar.scrolled {
-    background-color: #ffffff;
-    /* White background */
+    background-color: rgba(8, 28, 51, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     transition: background-color 0.3s ease;
-    /* Smooth transition to white */
-    color: #333;
-    /* Change text color for visibility */
+    border-bottom: 1px solid rgba(100, 181, 246, 0.15);
 }
 
 .navbar.scrolled .nav-link,
 .navbar.scrolled .navbar-brand {
-    color: #333 !important;
-    /* Dark text color when scrolled */
+    color: #e8eaf0 !important;
 }
 
 .navbar.scrolled .nav-link:hover {
-    color: #007bff !important;
-    /* Keep the hover effect */
+    color: #64b5f6 !important;
 }

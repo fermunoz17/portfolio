@@ -38,8 +38,7 @@ function About() {
         { src: `${process.env.PUBLIC_URL}/images/java.png`, alt: "Java" },
         { src: `${process.env.PUBLIC_URL}/images/js.png`, alt: "JavaScript" },
         { src: `${process.env.PUBLIC_URL}/images/ts.png`, alt: "TS" },
-        { src: `${process.env.PUBLIC_URL}/images/html.png`, alt: "HTML" },
-        { src: `${process.env.PUBLIC_URL}/images/css.png`, alt: "CSS" },
+        { src: `${process.env.PUBLIC_URL}/images/docker.png`, alt: "Docker" },
         { src: `${process.env.PUBLIC_URL}/images/git.png`, alt: "GIT" }
     ];
 
@@ -75,16 +74,25 @@ function About() {
                 <br></br>
                 <div className="tech-icons">
                     {techIcons.map((icon, index) => (
-                        <motion.img
+                        <motion.div
                             key={icon.alt}
-                            src={icon.src}
-                            alt={icon.alt}
+                            className="tech-icon-wrapper"
                             variants={iconVariants}
                             initial="hidden"
                             whileInView="visible"
                             custom={index}
                             viewport={{ once: true }}
-                        />
+                            whileHover={{ scale: 1.15 }}
+                            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                        >
+                            <img
+                                src={icon.src}
+                                alt={icon.alt}
+                                className="tech-icon-bounce"
+                                style={{ animationDelay: `${index * 0.15}s` }}
+                            />
+                            <span className="tech-icon-label">{icon.alt}</span>
+                        </motion.div>
                     ))}
                 </div>
                 <h3>Education</h3>
